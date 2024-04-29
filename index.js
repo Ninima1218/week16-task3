@@ -26,8 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
     const logo = document.getElementById('logo');
-    logo.src = `/logos/${make}.png`; // Предполагается, что у вас есть изображения логотипов с названием производителя автомобиля (например, mercedes.png, toyota.png, и т.д.) в папке "logos"
-    }
+    logo.src = `/logos/${make}.png`; // здесь должны быть лого, но почему-то они не видны на страничке, наверно неправильный пуьт
 
     carMakeSelect.addEventListener('change', function() {
         const selectedMake = carMakeSelect.value;
@@ -48,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const ownerCount = document.querySelector('input[name="ownerCount"]:checked').value;
         const payment = paymentSelect.value;
         // Code to calculate car price based on selected parameters
-
+        // вроде все расписала, но цена не высчитывается. Не могу найти ошибку
      function calculatePrice() {
         const selectedMake = carMakeSelect.value;
         const selectedModel = carModelSelect.value;
